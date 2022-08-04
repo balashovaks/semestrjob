@@ -1,0 +1,425 @@
+<!--главная слайдер-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>New Catalog</title>
+</head>
+<body>
+    <header class="catalog__main">
+        <div class="main__menu">
+            <div class="burger">
+                <span></span>
+            </div>
+            <nav class="main__menu__nav">
+                <ul class="main__menu__list">
+                    <li><a class="main__menu__items" href="#">all new</a></li>
+                    <li><a class="main__menu__items" href="#">sale</a></li>
+                    <li><a class="main__menu__items" href="#">dress</a></li>
+                    <li><a class="main__menu__items" href="#">shoes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--лого-->
+        <h1 class="logo">Eternity</h1>
+        <!--поисковая строка-->
+        <div class="main-nav">
+            <input class="search" type="text" placeholder="Search">
+            <a href="#"><span class="main__text">Help</span></a>
+            <!--корзина-->
+            <div class="main__basket basket" tabindex="0">
+                <span class="main__text">
+                    Basket
+                    <span class="basket__num main__text">(0)</span>
+                </span>
+            </div>
+            <div class="basket__content">
+                <div class="basket__content__list">
+                    <div class="basket__content__item" data-id="546545646874">
+                        <div class="basket__content__product basket__product">
+                            <img class="basket__product__img" src="images/dress_silver.jpg" alt="">
+                            <div class="basket__product__text">
+                                <h3 class="basket__product__title">monica</h3>
+                                <span class="basket__product__price">69.99USD</span>
+                            </div>
+                            <button class="basket__product__delete" aria-label="Delete item"></button>
+                        </div>
+                    </div>
+                    <div class="basket__content__item" data-id="4684646876">
+                        <div class="basket__content__product basket__product">
+                            <img class="basket__product__img" src="images/blouse4.jpg" alt="">
+                            <div class="basket__product__text">
+                                <h3 class="basket__product__title">casablanca</h3>
+                                <span class="basket__product__price">35.99USD</span>
+                            </div>
+                            <button class="basket__product__delete" aria-label="Delete item"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__content__bottom">
+                    <div class="basket__content__fullprice">
+                        <span class="fullprice__total">Total:</span>
+                        <span class="fullprice__num">69.99USD</span>
+                    </div>
+                    <button class="button__send button button__text"><a href="#!" class="button__text">Send</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="wrap">
+        <img class="slider__button btn__left" src="svg/bx_bx-left-arrow.svg" alt="">
+        <div class="slider__container">
+            <div class="slider__track">
+                <a href="#"><div class="slider__item">
+                    <img class="slider__img" src="images/main_sale.jpg" alt="">
+                    <h3 class="slider__name">Sale</h3>
+                    <div class="slider__svg">
+                        <img class="slider__svg__point" src="svg/Ellipse 1.svg" alt="">
+                        <img class="slider__svg__blackpoint" src="svg/Ellipse 2.svg" alt="">
+                        <img class="slider__svg__point" src="svg/Ellipse 2.svg" alt="">
+                    </div>
+                </div></a>
+                <a href="#"><div class="slider__item">
+                    <img class="slider__img" src="images/main_new.jpg" alt="">
+                    <h3 class="slider__name">NEW</h3>
+                    <div class="slider__svg">
+                        <img class="slider__svg__point" src="svg/Ellipse 2.svg" alt="">
+                        <img class="slider__svg__blackpoint" src="svg/Ellipse 1.svg" alt="">
+                        <img class="slider__svg__point" src="svg/Ellipse 2.svg" alt="">
+                    </div>
+                </div></a>
+                <a href="#"><div class="slider__item">
+                    <img class="slider__img" src="images/main_summer.jpg" alt="">
+                    <h3 class="slider__name">Summer</h3>
+                    <div class="slider__svg">
+                        <img class="slider__svg__point" src="svg/Ellipse 2.svg" alt="">
+                        <img class="slider__svg__blackpoint" src="svg/Ellipse 2.svg" alt="">
+                        <img class="slider__svg__point" src="svg/Ellipse 1.svg" alt="">
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <img class="slider__button btn__right" src="svg/bx_bx-left-arrow-1.svg" alt="">
+    </section>
+
+    <section class="catalog catalog__new">
+        <h2 class="catalog__title">New</h2>
+        <nav class="catalog__nav">
+            <ul id="nav__new">
+                <li class="text__catalog__nav" data-f="all">All new</li>
+                <li class="text__catalog__nav" data-f="dress">Dress</li>
+                <li class="text__catalog__nav" data-f="blouse">Blouse</li>
+                <li class="text__catalog__nav" data-f="skirt">Skirt</li>
+                <li class="text__catalog__nav" data-f="trousers">Trousers</li>
+                <li class="text__catalog__nav" data-f="shoes">Shoes</li>
+            </ul>
+        </nav>
+        <div class="catalog__items">
+            <div class="catalog__img" data-item="dress" data-id="546545646874">
+                <img class="img__item" src="images/dress_silver.jpg" alt="платье">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">monica</h3>
+                    <p class="info__price">69.99USD</p>
+                    <button class="button__add button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="blouse" data-id="4684646876">
+                <img class="img__item" src="images/blouse4.jpg" alt="блузка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">casablanca</h3>
+                    <p class="info__price">35.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="blouse" data-id="678654353653">
+                <img class="img__item" src="images/blouse.jpg" alt="блузка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">jane</h3>
+                    <p class="info__price">44.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="trousers" data-id="555555555555">
+                <img class="img__item" src="images/trousers4.jpg" alt="брюки">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">lidia</h3>
+                    <p class="info__price">55.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="skirt" data-id="674643565686868">
+                <img class="img__item" src="images/skirt7.jpg" alt="юбка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Agata</h3>
+                    <p class="info__price">37.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="4574575676568888">
+                <img class="img__item" src="images/shoes_woman5.jpg" alt="туфли">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Agnes</h3>
+                    <p class="info__price">73.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="trousers" data-id="4564574687754">
+                <img class="img__item" src="images/trousers2.jpg" alt="брюки">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Adelaida</h3>
+                    <p class="info__price">52.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="dress" data-id="9995r7786866666">
+                <img class="img__item" src="images/dress_yellow.jpg" alt="платье">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Ida</h3>
+                    <p class="info__price">25.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="6376878685686">
+                <img class="img__item" src="images/shoes_bot7.jpg" alt="обувь">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Iris</h3>
+                    <p class="info__price">36.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="blouse" data-id="465788854422">
+                <img class="img__item" src="images/blouse2.jpg" alt="блузка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Alice</h3>
+                    <p class="info__price">53.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="blouse" data-id="11443555553242">
+                <img class="img__item" src="images/blouse5.jpg" alt="блузка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Amanda</h3>
+                    <p class="info__price">44.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="680086543334556">
+                <img class="img__item" src="images/shoes_woman3.jpg" alt="туфли">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Amelia</h3>
+                    <p class="info__price">28.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="skirt" data-id="63675876798769584">
+                <img class="img__item" src="images/skirt3.jpg" alt="юбка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Anastasia</h3>
+                    <p class="info__price">67.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="trousers" data-id="112447886433">
+                <img class="img__item" src="images/trousers5.jpg" alt="брюки">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Angelina</h3>
+                    <p class="info__price">35.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="blouse" data-id="8774652525278867">
+                <img class="img__item" src="images/blouse1.jpg" alt="блузка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Ann</h3>
+                    <p class="info__price">62.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="dress" data-id="1414007543788765">
+                <img class="img__item" src="images/dress_black.jpg" alt="платье">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Ariel</h3>
+                    <p class="info__price">25.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="skirt" data-id="90439483048270232">
+                <img class="img__item" src="images/skirt5.jpg" alt="юбка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Arya</h3>
+                    <p class="info__price">64.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="trousers" data-id="66543s34644">
+                <img class="img__item" src="images/trousers3.jpg" alt="брюки">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Vivian</h3>
+                    <p class="info__price">32.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="77954131346376546">
+                <img class="img__item" src="images/shoes_bot5.jpg" alt="обувь">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Gabriel</h3>
+                    <p class="info__price">57.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="blouse" data-id="767654321333345">
+                <img class="img__item" src="images/blouse3.jpg" alt="блузка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Gwen</h3>
+                    <p class="info__price">25.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="12314874431231345">
+                <img class="img__item" src="images/shoes_bot2.jpg" alt="обувь">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Debra</h3>
+                    <p class="info__price">72.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="4234234646242">
+                <img class="img__item" src="images/shoes_bot3.jpg" alt="обувь">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Juliet</h3>
+                    <p class="info__price">34.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="skirt" data-id="2534154562365">
+                <img class="img__item" src="images/skirt.jpg" alt="юбка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Jenny</h3>
+                    <p class="info__price">42.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="dress" data-id="2535634245253">
+                <img class="img__item" src="images/dress_red1.jpg" alt="платье">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Gina</h3>
+                    <p class="info__price">36.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="1234235444067">
+                <img class="img__item" src="images/shoes_bot6.jpg" alt="обувь">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Joyce</h3>
+                    <p class="info__price">21.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="skirt" data-id="4643624522524">
+                <img class="img__item" src="images/skirt2.jpg" alt="юбка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Dorothy</h3>
+                    <p class="info__price">36.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="23435gd4345236">
+                <img class="img__item" src="images/shoes_woman6.jpg" alt="туфли">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Jacqueline</h3>
+                    <p class="info__price">89.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="5q24543s334263">
+                <img class="img__item" src="images/shoes_woman1.jpg" alt="туфли">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Zara</h3>
+                    <p class="info__price">34.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="dress" data-id="4564fs6344363">
+                <img class="img__item" src="images/dress_red3.jpg" alt="платье">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Irma</h3>
+                    <p class="info__price">47.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="536352113g3521232">
+                <img class="img__item" src="images/shoes_woman2.jpg" alt="туфли">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Camilla</h3>
+                    <p class="info__price">69.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="4663434341fs333">
+                <img class="img__item" src="images/shoes_bot4.jpg" alt="обувь">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Karen</h3>
+                    <p class="info__price">99.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="skirt" data-id="413212314f112">
+                <img class="img__item" src="images/skirt6.jpg" alt="юбка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Cassandra</h3>
+                    <p class="info__price">53.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="shoes" data-id="43f1321443254">
+                <img class="img__item" src="images/shoes_woman4.jpg" alt="туфли">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Constance</h3>
+                    <p class="info__price">44.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="dress" data-id="6343d34534335463">
+                <img class="img__item" src="images/dress_red.jpg" alt="платье">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Kelly</h3>
+                    <p class="info__price">29.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="blouse" data-id="f1313543tg313">
+                <img class="img__item" src="images/blouse6.jpg" alt="блузка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Laura</h3>
+                    <p class="info__price">36.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+            <div class="catalog__img" data-item="skirt" data-id="44g644654345646">
+                <img class="img__item" src="images/skirt4.jpg" alt="юбка">
+                <div class="catalog__item__info">
+                    <h3 class="info__name">Leona</h3>
+                    <p class="info__price">43.99USD</p>
+                    <button class="button"><a href="#!" class="button__text">Add to Shopping Cart</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__items">
+            <a class="footer__items__text" href="#">КОНТАКТЫ</a>
+            <a class="footer__items__text" href="#">СОЦ.СЕТИ</a>
+        </div>
+    </footer>
+    <script src="styles/index.js"></script>
+</body>
+</html>
